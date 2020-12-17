@@ -1,0 +1,237 @@
+@media screen and (max-width: 1200px) {
+  body {
+    min-width: 100%;
+  }
+  header,
+  .gallery,
+  .info-text,
+  .info-photo {
+    width: 100%;
+    padding: 0 40px 0 40px;
+  }
+  .gallery {
+    left: 0;
+  }
+
+  .text-content {
+    flex-direction: column;
+  }
+  .description {
+    width: 100%;
+  }
+  .social-icons-holder {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .social-icons {
+    padding-top: 10px;
+    margin-bottom: 60px;
+  }
+  .social-icons li {
+    margin-right: 15px;
+  }
+  .list {
+    width: 100%;
+  }
+  .info-text-wrapper {
+    margin-bottom: 50px;
+  }
+  .info-text {
+    margin-bottom: 35px;
+  }
+  .h3-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .slick-dots {
+    margin-right: 0;
+  }
+  .info-photo h3 {
+    margin-bottom: 40px;
+  }
+  .photo li {
+    width: 24%;
+  }
+  .photo li img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  body {
+    font-size: 15px;
+  }
+  .gallery-text h1 {
+    font-size: 28px;
+  }
+  .gallery-slide {
+    margin-bottom: 50px;
+  }
+  .info-text h2 {
+    margin-bottom: 30px;
+  }
+  nav {
+    position: relative;
+  }
+  .burger-menu label {
+    height: 43px;
+    width: 57px;
+    background: #23b7a4;
+    position: absolute;
+    right: 0;
+    top: -20px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .navigation {
+    position: absolute;
+    right: -40px;
+    height: 10px;
+    width: 300px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 40px;
+    background: rgba(35, 183, 164, 0.95);
+    overflow: hidden;
+  }
+  .navigation li,
+  .navigation li:hover,
+  .navigation li.active {
+    border: none;
+  }
+  .navigation li a,
+  .navigation li.active a {
+    color: #fff;
+    font-size: 20px;
+  }
+  .navigation li a:hover {
+    color: #1d2126;
+  }
+  .burger-menu input[type="checkbox"]:checked ~ ul {
+    height: calc(100vh - 80px);
+    opacity: 1;
+    right: -40px;
+  }
+  .burger-menu label:before,
+  .burger-menu label:after,
+  .burger-menu label strong {
+    content: "";
+    height: 5px;
+    width: 36px;
+    background: #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .burger-menu label:after {
+    bottom: 10px;
+    top: initial;
+  }
+  .burger-menu label strong {
+    top: calc(50% - 3px);
+  }
+  .burger-menu input[type="checkbox"]:checked + label:before {
+    transform: rotate(45deg);
+    top: 19px;
+  }
+  .burger-menu input[type="checkbox"]:checked + label:after {
+    transform: rotate(-45deg);
+    bottom: 19px;
+  }
+  .burger-menu input[type="checkbox"]:checked + label strong {
+    display: none;
+  }
+}
+@media screen and (max-width: 783px) {
+  header,
+  .gallery,
+  .info-text,
+  .info-photo {
+    padding: 0 10px 0 10px;
+  }
+  header {
+    height: 60px;
+  }
+  .gallery-text {
+    width: 100%;
+  }
+  .gallery-wrapper img {
+    min-height: 300px;
+  }
+  .gallery-text h1 {
+    font-size: 22px;
+  }
+  .gallery-text p {
+    font-size: 14px;
+  }
+  .info-text h2 {
+    font-size: 25px;
+  }
+  .list span {
+    font-size: 16px;
+  }
+  .info-photo ul {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .info-photo li {
+    width: 43%;
+    margin-bottom: 15px;
+  }
+  .burger-menu label {
+    height: 33px;
+    width: 47px;
+    top: -17px;
+  }
+  .burger-menu label:before {
+    top: 6px;
+    left: 9px;
+    width: 30px;
+  }
+  .burger-menu label:after {
+    bottom: 6px;
+    left: 9px;
+    width: 30px;
+  }
+  .burger-menu label strong {
+    left: 9px;
+    width: 30px;
+  }
+  .navigation {
+    top: 30px;
+    right: -10px;
+    width: 200px;
+  }
+  .burger-menu input[type="checkbox"]:checked ~ ul {
+    right: -10px;
+  }
+  .burger-menu input[type="checkbox"]:checked ~ ul {
+    height: calc(100vh - 115px);
+  }
+  .burger-menu input[type="checkbox"]:checked + label:before {
+    top: 14px;
+  }
+  .burger-menu input[type="checkbox"]:checked + label:after {
+    bottom: 14px;
+  }
+  .social-icons li {
+    margin-right: 5px;
+  }
+  .info-text {
+    margin-bottom: 10px;
+  }
+  .speciality {
+    padding-left: 0;
+    text-align: center;
+  }
+  .join-us a {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+}
